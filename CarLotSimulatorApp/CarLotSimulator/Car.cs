@@ -10,7 +10,8 @@ namespace CarLotSimulator
     {
         public Car()
         {
-
+            CarLot.numberOfCars++;
+            CarLot.carList.Add(this);
         }
 
         public Car(string make, string model, int year)
@@ -18,6 +19,8 @@ namespace CarLotSimulator
             Make = make;
             Model = model;
             Year = year;
+            CarLot.numberOfCars++;
+            CarLot.carList.Add(this);
         }
 
 
